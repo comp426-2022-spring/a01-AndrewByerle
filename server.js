@@ -25,7 +25,6 @@ console.log(port);
 // The function must read a file located at `./www/index.html` and do some stuff with it.
 // The stuff that should be inside this function is all below.
 
-
 // Use async instead
 try {
     const data = fs.readFileSync(`./www/index.html`, 'utf8')
@@ -42,6 +41,7 @@ try {
     })
   } catch (err) {
     console.error(err)
+    return
     exit(1);
   }
 
